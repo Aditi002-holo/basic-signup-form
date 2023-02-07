@@ -116,7 +116,7 @@ body {
 
 .input-ele {
     width: 100%;
-    padding: 1.2em 1em;
+    padding: 0.9em 1em;
     margin: 1em 0;
     border: 1px solid var(--grayish-blue);
     border-radius: 5px;
@@ -125,10 +125,14 @@ body {
     font-weight: 600;
     font-size: 0.9rem;
     cursor: pointer;
-    
+}
+
+.field-empty-alert {
+    border: 1.5px solid var(--main-background);
 }
 
 .claim-btn {
+    margin-top: 2em;
     color: #fff;
     background-color: var(--claim-it-btn);
 }
