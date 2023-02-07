@@ -22,16 +22,27 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--main-background);
     color: #fff;
+    background-image: url(../images/bg-intro-mobile.png);
 }
 
 .main {
     width: 85%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 3em;
+    margin-top: 2.5em;
 
     display: flex;
     flex-direction: column;
+}
+
+@media(min-width: 768px) {
+    .main {
+        max-width: 900px;
+        flex-direction: row;
+        column-gap: 2em;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Page Intro Section */
@@ -43,6 +54,17 @@ body {
 
 .desc {
     margin: 1em 0 3em;
+}
+
+@media(min-width: 768px) {
+    .section-desc {
+        text-align: left;
+    }
+
+    .title {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
 }
 
 /* Try it Free Button */
@@ -58,11 +80,12 @@ body {
     border-radius: 5px;
     /* box-shadow: 6px 2px 10px var(--dark-blue); */
 
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: inherit;
     font-weight: 600;
 
     margin-bottom: 1.5em;
+    cursor: pointer;
 }
 
 .try-it-free-btn span{
@@ -74,6 +97,7 @@ body {
 .sign-up-form {
     background-color: #fff;
     padding: 1em 1.5em;
+    margin-bottom: 3em;
     color: var(--grayish-blue);border-radius: 5px;
 }
 
@@ -87,6 +111,8 @@ body {
     font-family: inherit;
     font-weight: 600;
     font-size: 0.9rem;
+    cursor: pointer;
+    
 }
 
 .claim-btn {
@@ -100,12 +126,13 @@ body {
     border-radius: 5px;
     /* box-shadow: 6px 2px 10px var(--dark-blue); */
 
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: inherit;
     font-weight: 600;
     text-transform: uppercase;
 
     margin: 1em 0;
+    cursor: pointer;
 }
 
 .agree-to-terms {
@@ -117,5 +144,11 @@ body {
 .agree-to-terms span {
     color: var(--main-background);
     font-weight: 700;
+}
+
+@media(min-width: 768px) {
+    .try-it-free-btn {
+        padding: 0.5em;
+    }
 }
 
