@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-background:hsl(0, 100%, 74%);
+    --claim-it-btn:hsl(154, 59%, 51%);
+    --try-it-btn:hsl(248, 32%, 49%);
+
+    /* Accent */
+    --blue-for-text:hsl(248, 32%, 49%);
+
+    /* Neutral */
+    --dark-blue:hsl(249, 10%, 26%);
+    --grayish-blue:hsl(246, 25%, 77%);
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
